@@ -13,7 +13,11 @@ const { frontmatter } = Astro.props;
   <p><em>{frontmatter.description}</em></p>
   <p>
     Tags: {
-      frontmatter.tags.map((tag: String) => <span class="tag">{tag}</span>)
+      frontmatter.tags.map((tag: String) => (
+        <span class="tag">
+          <a href={`/tags/${tag}`}>{tag}</a>
+        </span>
+      ))
     }
   </p>
   <slot />
