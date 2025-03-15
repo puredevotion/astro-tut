@@ -12,8 +12,10 @@
     "@astrojs/preact": "^4.0.5",
     "@astrojs/rss": "^4.0.11",
     "astro": "^5.5.2",
+    "astro-purgecss": "^5.2.2",
     "bootstrap": "^5.3.3",
     "preact": "^10.26.4",
+    "purgecss": "^7.0.2",
     "sass": "^1.85.1"
   },
   "devDependencies": {
