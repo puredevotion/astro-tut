@@ -7,7 +7,7 @@ const { frontmatter } = Astro.props;
   <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
   <p>
     Written by {frontmatter.author} on {
-      frontmatter.pubDate.toString().slice(0, 10)
+      frontmatter.pubDate.toLocaleDateString()
     }
   </p>
   <p><em>{frontmatter.description}</em></p>
